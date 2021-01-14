@@ -8,18 +8,38 @@
   
   <body>
     <header>
-      <h1>CSE 110 Lab 2</h1>
-      <h2>Kenneth Shin</h2>
-      <h3>HTML Page</h3>
-      <a href="#main-content">Skip to main content</a>
       <!-- navigation and header content -->
+      <h1>CSE 110 Lab 2</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="#main-content">Main Content</a>
+            <ol>
+              <li><a href="#about-me">About Me</a>
+          <li><a href="#footer">Footer</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main id="main-content">
-      <!-- main page content -->
+      <h2>Kenneth Shin</h2>
     </main>
+      
+    <section id="about-me">
+      <h3>About Me</h3>
+      <p>I am from LA and am studying remotely for winter quarter of 2021 at UCSD. Studying computer science, sophomore year.</p>
+      
+    </section>
     
-    <footer>
+    <figure>
+      <aside>
+        <p>I have a dog and she is great! Her name is Daisy.</p>
+      </aside>
+      <img src="https://user-images.githubusercontent.com/60720965/103718763-6a20b700-4f7c-11eb-8fd7-6d707341f114.PNG"
+           alt="dog">
+      <figcaption>dog</figcaption>
+    </figure>
+    
+    <footer id="footer">
       <p>Made by Kenneth Shin</p>
     </footer>
   </body>
