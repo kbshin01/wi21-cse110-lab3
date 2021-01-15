@@ -43,15 +43,47 @@
         <img src="https://user-images.githubusercontent.com/60720965/103718763-6a20b700-4f7c-11eb-8fd7-6d707341f114.PNG"
              alt="dog">
       </picture>
-      <figcaption>dog</figcaption>
+      <p>(real picture of dog)</p>
+      <pre>
+           / \__
+          (    @\___
+          /         O
+         /   (_____/
+        /_____/   U
+      </pre>
+      <p>(another real picture of dog)</p>
+      <svg>
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="red"/>
+      </svg>
+      <p>(ball for the dog)</p>
+      <canvas id="myCanvas" width="200" height="100"
+              style="border:1px solid #c3c3c3;">
+        Your browser does not support the canvas element.
+      </canvas>
+      <p>(grass for the dog)</p>
+
+      <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#228B22";
+        ctx.fillRect(0,0,200,100);
+       </script>
     </figure>
         
     <figure>
-      <figcaption>Listen to the dog:</figcaption>
+      <figcaption>Listen to the <code>dog</code>:</figcaption>
       <audio controls>
-        <source src="dog.mp3" type="audio/mpeg">
+        <source src="/dog.mp3" type="audio/mpeg">
         Your browser does not support the <code>audio</code> element.
       </audio>
+    </figure>
+        
+    <figure>
+      <figcaption>Watch a video of <code>dogs</code>:</figcaption>
+      <video controls>
+        <source src="/dog.mp4" type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+      </video
     </figure>
     
     <table>
