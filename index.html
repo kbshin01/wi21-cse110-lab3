@@ -44,14 +44,6 @@
              alt="dog">
       </picture>
       <p>(real picture of dog)</p>
-      <pre>
-           / \__
-          (    @\___
-          /         O
-         /   (_____/
-        /_____/   U
-      </pre>
-      <p>(another real picture of dog)</p>
       <svg>
         <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="red"/>
       </svg>
@@ -60,7 +52,7 @@
               style="border:1px solid #c3c3c3;">
         Your browser does not support the canvas element.
       </canvas>
-      <p>(grass for the dog)</p>
+      <textarea>(grass for the dog)</textarea><br>
 
       <script>
         var canvas = document.getElementById("myCanvas");
@@ -85,6 +77,8 @@
         Sorry, your browser doesn't support embedded videos.
       </video
     </figure>
+        
+    <hr>
     
     <table>
       <caption>Coding Languages</caption>
@@ -108,6 +102,8 @@
         <td>Learned from this lab</td>
       </tr>
     </table>
+        
+    <hr>
     
     <section>
       <form method="post">
@@ -127,7 +123,7 @@
             </optgroup>
           </select>
         </fieldset>
-      </form>
+      </form><br>
       
       <form>
         <label>Name: <input type="text" name="submitted-name" autocomplete="name"></label><br>
@@ -140,14 +136,45 @@
         <label>Website: <input type="url" name="submitted-url" autocomplete="submit url"></label><br>
         <label><input type="radio" name="radio">Select me for good luck this quarter</label><br>
         <label>(hidden)<input type="hidden" name="hidden" value="shhhhhh it's a secret"></label><br>
+        <label for="ice-cream-choice">Favorite Ice Cream Flavor: </label>
+        <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice"/><br>
+        <datalist id="ice-cream-flavors">
+          <option value="Vanilla">
+          <option value="Chocolate">
+          <option value="Strawberry">
+          <option value="Mint Chip">
+          <option value="Rainbow Sherbet">
+          <option value="Rocky Road">
+          <option value="Other">
+        </datalist>
         <button>Save</button>
       </form>
     </section>
           
     <footer id="footer">
       <p><i>Made by Kenneth Shin</i></p>
-      <p>Referenced MDN Web Docs</p>
-      <iframe src="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" title="mozilla developer html"></iframe>
+      <details>
+        <summary>Referenced MDN Web Docs</summary>
+        <iframe src="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" title="mozilla developer html"></iframe>
+      </details><br>
+      <button onclick="showContent()">Click for a surprise</button>
+      <template>
+        <pre>
+           / \__
+          (    @\___
+          /         O
+         /   (_____/
+        /_____/   U
+        </pre>
+      </template>
+
+      <script>
+        function showContent() {
+          var temp = document.getElementsByTagName("template")[0];
+          var clon = temp.content.cloneNode(true);
+          document.body.appendChild(clon);
+        }
+      </script>
     </footer>
   </body>
 </html>
