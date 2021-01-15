@@ -109,6 +109,41 @@
       </tr>
     </table>
     
+    <section>
+      <form method="post">
+        <fieldset>
+          <legend>Misc</legend>
+          <label for="day-select">How was your day:</label>
+          <select>
+            <optgroup label="Good">
+              <option>Kinda good</option>
+              <option>Good</option>
+              <option>Really good :)</option>
+            </optgroup>
+            <optgroup label="Bad">
+              <option>Kinda bad</option>
+              <option>Bad</option>
+              <option>Really bad :(</option>
+            </optgroup>
+          </select>
+        </fieldset>
+      </form>
+      
+      <form>
+        <label>Name: <input type="text" name="submitted-name" autocomplete="name"></label><br>
+        <label>Favorite Color: <input type="color" name="submitted-color" autocomplete="fav color"></label><br>
+        <label>Birthday: <input type="date" name="submitted-bday" autocomplete="birthday"></label><br>
+        <label>Email Address: <input type="email" name="submitted-email" autocomplete="email address"></label><br>
+        <label>Favorite Number: <input type="number" name="submitted-number" autocomplete="fav number"></label><br>
+        <label>Phone Number: <input type="tel" name="submitted-tel" autocomplete="phone number"></label><br>
+        <label>Time of Day: <input type="time" name="submitted-time" autocomplete="time of day"></label><br>
+        <label>Website: <input type="url" name="submitted-url" autocomplete="submit url"></label><br>
+        <label><input type="radio" name="radio">Select me for good luck this quarter</label><br>
+        <label>(hidden)<input type="hidden" name="hidden" value="shhhhhh it's a secret"></label><br>
+        <button>Save</button>
+      </form>
+    </section>
+          
     <footer id="footer">
       <p><i>Made by Kenneth Shin</i></p>
       <p>Referenced MDN Web Docs</p>
