@@ -1,1 +1,47 @@
+.menu {
+  background-color: blue;
+}
 
+#main-content {
+  background-color: rgb(255, 140, 0);
+}
+
+* {
+  background-color: #92b8d2;
+}
+
+p {
+  background-color: hsl(80, 42%, 50%);
+}
+
+input[type=text] {
+  width: 96px;
+}
+
+aside::after {
+  content: ":-)";
+}
+
+h1, h2 {
+  background-color: blue;
+}
+
+div p {
+  background-color: blue;
+}
+
+ul > li {
+  background-color: blue;
+}
+
+ol + li {
+  background-color: blue;
+}
+
+h3 ~ p {
+  background-color: blue;
+}
+
+nav.menu {
+  background-color: blue;
+}
