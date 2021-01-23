@@ -1,5 +1,32 @@
+/* Hi my name is Kenneth and I hope you are having a good day :) */
+@font-face {
+  font-family: 'Roboto';
+  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    background-color: blue;
+  }
+}
+
 .menu {
   background-color: blue;
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 #main-content {
@@ -12,10 +39,38 @@
 
 p {
   background-color: hsl(80, 42%, 50%);
+  height: 0.5in;
+  width: 1in;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  line-height: 2em;
+}
+
+div {
+  background-color: hsl(80, 42%, 50%);
+  height: 0.5in;
+  width: 1in;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right; 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 2.5em;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: green;
 }
 
 input[type=text] {
-  width: 96px;
+  width: 25mm;
 }
 
 aside::after {
@@ -23,25 +78,34 @@ aside::after {
 }
 
 h1, h2 {
-  background-color: blue;
+  margin: auto;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  border-radius: 20px;
+  color: coral;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5em;
 }
 
 div p {
-  background-color: blue;
+  display: inline;
 }
 
 ul > li {
-  background-color: blue;
+  display: block;
 }
 
 ol + li {
-  background-color: blue;
+  max-width: 90%;
 }
 
 h3 ~ p {
-  background-color: blue;
+  position: relative;
 }
 
 nav.menu {
-  background-color: blue;
+  position: static;
+  min-width: 10%;
 }
