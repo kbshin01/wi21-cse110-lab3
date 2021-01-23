@@ -29,6 +29,11 @@
   align-content: center;
 }
 
+.box {
+  border-radius: 5px;
+  padding: 20px;
+}
+
 #main-content {
   background-color: rgb(255, 140, 0);
 }
